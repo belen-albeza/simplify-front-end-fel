@@ -1,67 +1,170 @@
 doctype html
 html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title Less Code
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        title Less Code
 
-    link(rel='stylesheet', type='text/css', href='build/build.css')
+        link(rel='stylesheet', type='text/css', href='build/build.css')
 
-  body
+    body: article
 
-    article
+        section
+            h1 Less Code
+            h3 Simplifying front-end
+            p.author by <a href="https://www.twitter.com/ladybenko">@ladybenko</a>
 
-      section
-        h1 Less Code
+        section
+            h2 Let me tell you a story…
 
-      section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+        // ---------------------------------------------------------------------        
+        section
+            h1 On dogmatism
+            h3 TODO
+        // ---------------------------------------------------------------------        
+            
+        // TODO
 
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+        // ---------------------------------------------------------------------        
+        section
+            h1 On keeping up
+        // ---------------------------------------------------------------------        
 
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+        section
+            h2.bullet Front-end is ever-changing
+            ul.bullets
+                li Yet another MCV framework
+                li Yet another CSS transpiler
+                li Yet another building tool
+                li Yet another template system
+                li ES6 is not yet fully supported and we're already coding with ES7!
 
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+        section
+            h2 Change is good
+            h3 But…
 
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
+        section
+            h2 Are you overwhelmed?
+            h3 I am
 
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+        section
+            h2 You don't have to keep up
+            ul.bullets
+                li You don't need to be an expert in all frameworks
+                li You don't need to use every CSS transpiler out there
+                li After all, <strong>they all do the same thing</strong>
+                li And by the way, callbacks still work
 
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+        section
+            h2 You have to find balance
+            ul.bullets
+                li Learning new things is a must
+                li But it's impossible to know everything from day zero
+                li Learn as you go
+                li Be curious
+                
+        // ---------------------------------------------------------------------        
+        section
+            h1 On dealing with clutter
+        // ---------------------------------------------------------------------        
+
+        section
+            h2 Features === possessions
+            ul.bullets
+                li You probably don't need as many as you believe 
+                li They require permanent upkeep
+                li They drag you down
+
+        section
+            h2 Only keep what's useful or make users happy
+            ul.bullets
+                li Is this thing <em>essential</em>?
+                li Do users truly love this?
+                li Learn to say "no"
+                
+        section
+            h2 The hidden cost of things
+            ul.bullets
+                li We think that the cost of a feature is just the time to implement it
+                li What about debugging? Docs? Testing? Localisation? Customer support?
+                li What about upkeep? Tech debt? Growing code-base? 
+                li What about this breaking existing stuff?
+                
+        section
+            h2 Less features makes you agile
+            ul.bullets
+                li You are less emotionally attached
+                li You can afford to throw it out if it doesn't work
+                li You can onboard team mates more easily
+                li You have resources to focus on what really matters
+                
+        
+        // ---------------------------------------------------------------------        
+        section
+            h1 On simplicity
+        // ---------------------------------------------------------------------        
+        
+        section
+            h1 80-character lines
+            ul.bullets
+                li Yes, they are enough… even with 4-char tabs
+                li Increase the font size as much as you can
+                li Having ~25 lines at once is a good size for functions
+                
+        section
+            h2 You can have decent markup
+            ul.bullets
+                li Care
+                li TODO
+            
+        section
+            h2 Avoid insane HTML
+            h3 How can this… ?
+            img(src="images/card.png")
+            
+        section
+            h3 …become this?
+            pre.verbose
+                code.language-html.
+                    &lt;div class="row"&gt;
+                      &lt;div class="col s12 m6"&gt;
+                        &lt;div class="card blue-grey darken-1"&gt;
+                          &lt;div class="card-content white-text"&gt;
+                            &lt;span class="card-title">Card Title&lt;/span&gt;
+                            &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                          &lt;/div&gt;
+                          &lt;div class="card-action"&gt;
+                            &lt;a href="#"&gt;This is a link&lt;/a&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+        section
+            h2 Make your CSS future-proof
+            ul.bullets
+                li <strong>Understand your cascade</strong> and don't just overwrite
+                li Use the less specific selector that works
+                li Do cascade and avoid repeating rules
+                li Do use your transpiler mixins, variables, etc.
+                li Be aware of unnecessary browser prefixes (<code>border-radius</code> I'm looking at you)
+      
+        //- section
+        //-     h2 Syntax Highlighting
+        //-     h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+        //-     pre
+        //-       code.language-javascript.
+        //-         bespoke.from('article', [
+        //-           classes(),
+        //-           keys(),
+        //-           touch(),
+        //-           bullets('li, .bullet')
+        //-         ]);
+
+        //- section(data-bespoke-hash='named-route')
+        //-     h2 Named Route
+        //-     h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        //-     p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
 
     script(src='build/build.js')

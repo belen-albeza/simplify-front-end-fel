@@ -4,5 +4,54 @@
 // Import CSS from "node_modules" and "bower_components"
 // thanks to Stylus' "import css" and "paths" options
 
-@import 'prism/themes/prism-okaidia.css'
+ @import 'prism/themes/prism-okaidia.css'
 // Check out "bower_components/prism/themes/" for available themes
+
+$high = #31ffd5
+
+a
+    border-bottom-color: $high
+
+a:hover
+    background: $high
+
+p
+    margin: 1em 0
+
+p.author
+    font-size: 0.8em
+    margin-top: 2em
+
+li, p
+    line-height: 1.5em
+
+li::before
+    content: '○'
+    font-size: 1.25em
+    color: #ddd
+
+h2 + ul, h3 + ul, h1 + ul
+    margin-top: 1em
+
+h1, h2
+    font-family: Futura, Helvetica, sans-serif
+
+strong
+    background: $high
+
+pre[class*="language-"], code[class*="language-"]
+    text-shadow: none
+
+pre
+    background: #272727 !important
+
+.verbose
+    font-size: 0.5em
+
+.bespoke-parent
+    background: #fff
+    color: #000
+    font-family: Helvetica, sans-serif
+
+.bespoke-progress-bar
+    background: #ddd
