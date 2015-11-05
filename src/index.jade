@@ -108,14 +108,15 @@ html
             h1 80-character lines
             ul.bullets
                 li Yes, they are enough… even with 4-char tabs
-                li Increase the font size as much as you can
-                li Having ~25 lines at once is a good size for functions
+                li Increase the font size as much as you can (good for your eyes)
+                li Having ~25 lines at once is a good amount for functions
                 
         section
-            h2 You can have decent markup
+            h2 Have decent HTML and CSS
             ul.bullets
-                li Care
-                li TODO
+                li HTML and CSS <em>is code</em> and you need to <em>care</em> about it.
+                li Don't settle for sub-standard markup or sloppy CSS
+                li Bad HTML and CSS will slow you down and make it harder to apply re-designs
             
         section
             h2 Avoid insane HTML
@@ -147,8 +148,29 @@ html
                 li <strong>Understand your cascade</strong> and don't just overwrite
                 li Use the less specific selector that works
                 li Do cascade and avoid repeating rules
-                li Do use your transpiler mixins, variables, etc.
-                li Be aware of unnecessary browser prefixes (<code>border-radius</code> I'm looking at you)
+                li Be aware of unnecessary browser prefixes (<code>border-radius</code> I am looking at you)
+                
+        section
+            h2 When using a CSS transpiler
+            ul.bullets
+                li Don't abuse nesting! (<a href="http://belenalbeza.com/the-dangers-of-nesting-abuse-in-css-compilers/">read more</a> about this)
+                li Think about the actual CSS output (ex: <code>extend</code> vs. <code>mixins</code> in Less)
+                li Do you <em>need</em> a transpiler for this particular project?
+                
+        section
+            h2 JavaScript
+            ul.bullets
+                li Care as much about it as back-end code! (tests, style guidelines, DRY, etc.)
+                li <strong>"JavaScript is ugly" is not an excuse</strong>
+                li If you use a framework / library, try to understand how it works
+                
+        section
+            h2 Favor modularity
+            ul.bullets
+                li I like to think of it as a capsule wardrobe
+                li Not only in your own code, but in the tools you use
+                li 3rd-party libs/frameworks that are modular, are way easier to understand…
+                li …and to re-use their parts in other projects
       
         //- section
         //-     h2 Syntax Highlighting
