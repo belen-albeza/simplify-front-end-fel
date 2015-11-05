@@ -17,18 +17,18 @@ html
         section
             h2 Let me tell you a story…
 
-        // ---------------------------------------------------------------------        
+        // ---------------------------------------------------------------------
         section
             h1 On dogmatism
             h3 TODO
-        // ---------------------------------------------------------------------        
-            
+        // ---------------------------------------------------------------------
+
         // TODO
 
-        // ---------------------------------------------------------------------        
+        // ---------------------------------------------------------------------
         section
             h1 On keeping up
-        // ---------------------------------------------------------------------        
+        // ---------------------------------------------------------------------
 
         section
             h2.bullet Front-end is ever-changing
@@ -62,16 +62,16 @@ html
                 li But it's impossible to know everything from day zero
                 li Learn as you go
                 li Be curious
-                
-        // ---------------------------------------------------------------------        
+
+        // ---------------------------------------------------------------------
         section
             h1 On dealing with clutter
-        // ---------------------------------------------------------------------        
+        // ---------------------------------------------------------------------
 
         section
             h2 Features === possessions
             ul.bullets
-                li You probably don't need as many as you believe 
+                li You probably don't need as many as you believe
                 li They require permanent upkeep
                 li They drag you down
 
@@ -81,15 +81,15 @@ html
                 li Is this thing <em>essential</em>?
                 li Do users truly love this?
                 li Learn to say "no"
-                
+
         section
             h2 The hidden cost of things
             ul.bullets
                 li We think that the cost of a feature is just the time to implement it
                 li What about debugging? Docs? Testing? Localisation? Customer support?
-                li What about upkeep? Tech debt? Growing code-base? 
+                li What about upkeep? Tech debt? Growing code-base?
                 li What about this breaking existing stuff?
-                
+
         section
             h2 Less features makes you agile
             ul.bullets
@@ -97,32 +97,39 @@ html
                 li You can afford to throw it out if it doesn't work
                 li You can onboard team mates more easily
                 li You have resources to focus on what really matters
-                
-        
-        // ---------------------------------------------------------------------        
+
+
+        // ---------------------------------------------------------------------
         section
             h1 On simplicity
-        // ---------------------------------------------------------------------        
-        
+        // ---------------------------------------------------------------------
+
         section
             h1 80-character lines
             ul.bullets
                 li Yes, they are enough… even with 4-char tabs
                 li Increase the font size as much as you can (good for your eyes)
                 li Having ~25 lines at once is a good amount for functions
-                
+
         section
             h2 Have decent HTML and CSS
             ul.bullets
                 li HTML and CSS <em>is code</em> and you need to <em>care</em> about it.
                 li Don't settle for sub-standard markup or sloppy CSS
                 li Bad HTML and CSS will slow you down and make it harder to apply re-designs
-            
+
+        section
+            h2 Be aware of UX frameworks
+            ul.bullets
+                li Great for prototyping
+                li The Incarnation of Evil if you need a different design
+                li Heavy luggage: styles you don't need AND hard to override
+
         section
             h2 Avoid insane HTML
             h3 How can this… ?
             img(src="images/card.png")
-            
+
         section
             h3 …become this?
             pre.verbose
@@ -141,7 +148,9 @@ html
                         &lt;/div&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
-                    
+
+
+
         section
             h2 Make your CSS future-proof
             ul.bullets
@@ -149,21 +158,21 @@ html
                 li Use the less specific selector that works
                 li Do cascade and avoid repeating rules
                 li Be aware of unnecessary browser prefixes (<code>border-radius</code> I am looking at you)
-                
+
         section
             h2 When using a CSS transpiler
             ul.bullets
                 li Don't abuse nesting! (<a href="http://belenalbeza.com/the-dangers-of-nesting-abuse-in-css-compilers/">read more</a> about this)
                 li Think about the actual CSS output (ex: <code>extend</code> vs. <code>mixins</code> in Less)
                 li Do you <em>need</em> a transpiler for this particular project?
-                
+
         section
             h2 JavaScript
             ul.bullets
                 li Care as much about it as back-end code! (tests, style guidelines, DRY, etc.)
                 li <strong>"JavaScript is ugly" is not an excuse</strong>
                 li If you use a framework / library, try to understand how it works
-                
+
         section
             h2 Favor modularity
             ul.bullets
@@ -171,7 +180,7 @@ html
                 li Not only in your own code, but in the tools you use
                 li 3rd-party libs/frameworks that are modular, are way easier to understand…
                 li …and to re-use their parts in other projects
-      
+
         //- section
         //-     h2 Syntax Highlighting
         //-     h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
