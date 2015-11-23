@@ -6,7 +6,9 @@ var bespoke = require('bespoke'),
   bullets = require('bespoke-bullets'),
   scale = require('bespoke-scale'),
   hash = require('bespoke-hash'),
-  progress = require('bespoke-progress');
+  progress = require('bespoke-progress'),
+  fullscreen = require('bespoke-fullscreen');
+
 
 // Bespoke.js
 bespoke.from('article', [
@@ -16,7 +18,8 @@ bespoke.from('article', [
   bullets('.bullet, .bullets li'),
   scale(),
   hash(),
-  progress()
+  progress(),
+  fullscreen()
 ]);
 
 // Prism syntax highlighting

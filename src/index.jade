@@ -12,7 +12,7 @@ html
         section
             h1 Less Code
             h3 Simplifying front-end
-            p.author by <a href="https://www.twitter.com/ladybenko">@ladybenko</a>
+            p.author Belén Albeza<br><a href="https://www.twitter.com/ladybenko">@ladybenko</a>
 
         section
             h2 Let me tell you a story…
@@ -20,11 +20,24 @@ html
         // ---------------------------------------------------------------------
         section
             h1 On dogmatism
-            h3 TODO
         // ---------------------------------------------------------------------
+        
+        section
+            h2 Learn to identify dogmas
+            ul.bullets
+                li "A dogma is a principle laid down by an authority as true"
+                li Some dogmas might be useful (i.e. "5 a day")
+                li Dogmas usually contain some truth…
+                li …but that doesn't make them right 100% of the time
 
-        // TODO
-
+        section
+            h2 Develop your own criteria
+            img.figure(src="images/microwave.jpg", width="350")
+            ul.bullets
+                li You might not need X for your project
+                li There are no silver bullets. <strong>Don't get married to a technology or a tool</strong>
+                li Challenge yourself!
+                
         // ---------------------------------------------------------------------
         section
             h1 On keeping up
@@ -70,10 +83,12 @@ html
 
         section
             h2 Features === possessions
+            img.figure(src="images/clutter.jpg",width="400")
             ul.bullets
                 li You probably don't need as many as you believe
                 li They require permanent upkeep
                 li They drag you down
+            p.footnote Image credit: <a href="https://www.flickr.com/photos/mlspooky/2621883627/">mlspooky @ flickr</a>
 
         section
             h2 Only keep what's useful or make users happy
@@ -103,13 +118,6 @@ html
         section
             h1 On simplicity
         // ---------------------------------------------------------------------
-
-        section
-            h1 80-character lines
-            ul.bullets
-                li Yes, they are enough… even with 4-char tabs
-                li Increase the font size as much as you can (good for your eyes)
-                li Having ~25 lines at once is a good amount for functions
 
         section
             h2 Have decent HTML and CSS
@@ -148,11 +156,22 @@ html
                         &lt;/div&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
-
-
+                    
+        section
+            h3 …and not this?
+            pre.verbose
+                code.language-html.
+                    &lt;article class="card light"&gt;
+                        &lt;h1 class="card-title">Card Title&lt;/h1&gt;
+                        &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                        &lt;nav class="card-action"&gt;
+                            &lt;a href="#"&gt;This is a link&lt;/a&gt;
+                        &lt;/nav&gt;
+                    &lt;/article&gt;    
 
         section
-            h2 Make your CSS future-proof
+            h2 Make your CSS flexible to design changes
             ul.bullets
                 li <strong>Understand your cascade</strong> and don't just overwrite
                 li Use the less specific selector that works
@@ -162,9 +181,28 @@ html
         section
             h2 When using a CSS transpiler
             ul.bullets
-                li Don't abuse nesting! (<a href="http://belenalbeza.com/the-dangers-of-nesting-abuse-in-css-compilers/">read more</a> about this)
-                li Think about the actual CSS output (ex: <code>extend</code> vs. <code>mixins</code> in Less)
+                li Think about the actual CSS output (ex: <code>extend</code> vs. mixins in Less)
+                li If you wouldn't type that rule by hand, don't let your transpiler do it for you
                 li Do you <em>need</em> a transpiler for this particular project?
+                
+        section
+            h2 Don't abuse nesting
+            pre.verbose
+                code.language-scss.
+                    .post {
+                        & > header {
+                            .meta {
+                                a {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+            ul.bullets
+                li Large CSS file
+                li Very specific rules which are hard to override
+                li Leads to no code re-use
+            p.footnote Read more about <a href="http://belenalbeza.com/the-dangers-of-nesting-abuse-in-css-compilers/">abusing nesting</a>
 
         section
             h2 JavaScript
@@ -175,11 +213,19 @@ html
 
         section
             h2 Favor modularity
+            img.figure(src="images/capsule.png", width="400")
             ul.bullets
-                li I like to think of it as a capsule wardrobe
                 li Not only in your own code, but in the tools you use
                 li 3rd-party libs/frameworks that are modular, are way easier to understand…
                 li …and to re-use their parts in other projects
+                li JS modules FTW
+            p.footnote Image credit: <a href="https://www.flickr.com/photos/queenieandthedew/20279439258/">queenieandthedew @ flickr</a>
+            
+        section
+            h1 Thanks!
+            h3 Questions?
+            p.author belen@mozilla.com <br>#devrel at irc.mozilla.org
+            img.logo(src="images/mozilla.png" width="200")
 
         //- section
         //-     h2 Syntax Highlighting
