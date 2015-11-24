@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Less Code</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Less Code</h1>
+        <h3>Simplifying front-end</h3>
+        <p class="author">Belén Albeza<br><a href="https://www.twitter.com/ladybenko">@ladybenko</a></p>
+      </section>
+      <section>
+        <h2>Let me tell you a story…</h2>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h1>On dogmatism</h1>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h2>Learn to identify dogmas</h2>
+        <ul class="bullets">
+          <li>"A dogma is a principle laid down by an authority as true"</li>
+          <li>Some dogmas might be useful (i.e. "5 a day")</li>
+          <li>Dogmas usually contain some truth…</li>
+          <li>…but that doesn't make them right 100% of the time</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Develop your own criteria</h2><img src="images/microwave.jpg" width="350" class="figure">
+        <ul class="bullets">
+          <li>You might not need X for your project</li>
+          <li>There are no silver bullets. <strong>Don't get married to a technology or a tool</strong></li>
+          <li>Challenge yourself!</li>
+        </ul>
+        <p class="footnote">Image credit: <a href="https://www.flickr.com/photos/danc86/19219314402/">danc86 @ flickr</a></p>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h1>On keeping up</h1>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h2 class="bullet">Front-end is ever-changing</h2>
+        <ul class="bullets">
+          <li>Yet another MCV framework</li>
+          <li>Yet another CSS transpiler</li>
+          <li>Yet another building tool</li>
+          <li>Yet another template system</li>
+          <li>ES6 is not yet fully supported and we're already coding with ES7!</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Change is good</h2>
+        <h3>But…</h3>
+      </section>
+      <section>
+        <h2>Are you overwhelmed?</h2>
+        <h3>I am</h3>
+      </section>
+      <section>
+        <h2>You don't have to keep up</h2>
+        <ul class="bullets">
+          <li>You don't need to be an expert in all frameworks</li>
+          <li>You don't need to use every CSS transpiler out there</li>
+          <li>After all, <strong>they all do the same thing</strong></li>
+          <li>And by the way, callbacks still work</li>
+        </ul>
+      </section>
+      <section>
+        <h2>You have to find balance</h2>
+        <ul class="bullets">
+          <li>Learning new things is a must</li>
+          <li>But it's impossible to know everything from day zero</li>
+          <li>Learn as you go</li>
+          <li>Be curious</li>
+        </ul>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h1>On dealing with clutter</h1>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h2>Features === possessions</h2><img src="images/clutter.jpg" width="400" class="figure">
+        <ul class="bullets">
+          <li>You probably don't need as many as you believe</li>
+          <li>They require permanent upkeep</li>
+          <li>They drag you down</li>
+        </ul>
+        <p class="footnote">Image credit: <a href="https://www.flickr.com/photos/mlspooky/2621883627/">mlspooky @ flickr</a></p>
+      </section>
+      <section>
+        <h2>Only keep what's useful or make users happy</h2>
+        <ul class="bullets">
+          <li>Is this thing <em>essential</em>?</li>
+          <li>Do users truly love this?</li>
+          <li>Learn to say "no"</li>
+        </ul>
+      </section>
+      <section>
+        <h2>The hidden cost of things</h2>
+        <ul class="bullets">
+          <li>We think that the cost of a feature is just the time to implement it</li>
+          <li>What about debugging? Docs? Testing? Localisation? Customer support?</li>
+          <li>What about upkeep? Tech debt? Growing code-base?</li>
+          <li>What about this breaking existing stuff?</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Less features makes you agile</h2>
+        <ul class="bullets">
+          <li>You are less emotionally attached</li>
+          <li>You can afford to throw it out if it doesn't work</li>
+          <li>You can onboard team mates more easily</li>
+          <li>You have resources to focus on what really matters</li>
+        </ul>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h1>On simplicity</h1>
+      </section>
+      <!-- ----------------------------------------------------------------------->
+      <section>
+        <h2>Have decent HTML and CSS</h2>
+        <ul class="bullets">
+          <li>HTML and CSS <em>is code</em> and you need to <em>care</em> about it.</li>
+          <li>Don't settle for sub-standard markup or sloppy CSS</li>
+          <li>Bad HTML and CSS will slow you down and make it harder to apply re-designs</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Be aware of UX frameworks</h2>
+        <ul class="bullets">
+          <li>Great for prototyping</li>
+          <li>The Incarnation of Evil if you need a different design</li>
+          <li>Heavy luggage: styles you don't need AND hard to override</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Avoid insane HTML</h2>
+        <h3>How can this… ?</h3><img src="images/card.png">
+      </section>
+      <section>
+        <h3>…become this?</h3>
+        <pre class="verbose"><code class="language-html">&lt;div class="row"&gt;
+  &lt;div class="col s12 m6"&gt;
+    &lt;div class="card blue-grey darken-1"&gt;
+      &lt;div class="card-content white-text"&gt;
+        &lt;span class="card-title">Card Title&lt;/span&gt;
+        &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="card-action"&gt;
+        &lt;a href="#"&gt;This is a link&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </section>
+      <section>
+        <h3>…and not this?</h3>
+        <pre class="verbose"><code class="language-html">&lt;article class="card light"&gt;
+    &lt;h1 class="card-title">Card Title&lt;/h1&gt;
+    &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+    I am convenient because I require little markup to use effectively.&lt;/p&gt;
+    &lt;nav class="card-action"&gt;
+        &lt;a href="#"&gt;This is a link&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/article&gt;    
+</code></pre>
+      </section>
+      <section>
+        <h2>Make your CSS flexible to design changes</h2>
+        <ul class="bullets">
+          <li><strong>Understand your cascade</strong> and don't just overwrite</li>
+          <li>Use the less specific selector that works</li>
+          <li>Do cascade and avoid repeating rules</li>
+          <li>Be aware of unnecessary browser prefixes (<code>border-radius</code> I am looking at you)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>When using a CSS transpiler</h2>
+        <ul class="bullets">
+          <li>Think about the actual CSS output (ex: <code>extend</code> vs. mixins in Less)</li>
+          <li>If you wouldn't type that rule by hand, don't let your transpiler do it for you</li>
+          <li>Do you <em>need</em> a transpiler for this particular project?</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Don't abuse nesting</h2>
+        <pre class="verbose"><code class="language-scss">.post {
+    & > header {
+        .meta {
+            a {
+                color: red;
+            }
+        }
+    }
+}</code></pre>
+        <ul class="bullets">
+          <li>Large CSS file</li>
+          <li>Very specific rules which are hard to override</li>
+          <li>Leads to no code re-use</li>
+        </ul>
+        <p class="footnote">Read more about <a href="http://belenalbeza.com/the-dangers-of-nesting-abuse-in-css-compilers/">abusing nesting</a></p>
+      </section>
+      <section>
+        <h2>JavaScript</h2>
+        <ul class="bullets">
+          <li>Care as much about it as back-end code! (tests, style guidelines, DRY, etc.)</li>
+          <li><strong>"JavaScript is ugly" is not an excuse</strong></li>
+          <li>If you use a framework / library, try to understand how it works</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Favor modularity</h2><img src="images/capsule.png" width="400" class="figure">
+        <ul class="bullets">
+          <li>Not only in your own code, but in the tools you use</li>
+          <li>3rd-party libs/frameworks that are modular, are way easier to understand…</li>
+          <li>…and to re-use their parts in other projects</li>
+          <li>JS modules FTW</li>
+        </ul>
+        <p class="footnote">Image credit: <a href="https://www.flickr.com/photos/queenieandthedew/20279439258/">queenieandthedew @ flickr</a></p>
+      </section>
+      <section>
+        <h2>Know when &amp; how to concede</h2>
+        <ul class="bullets">
+          <li>Sometimes it's not possible to keep everybody in the same page</li>
+          <li>Some scenarios call for a "dirty" solution</li>
+          <li>Keep a corner of calm</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Thanks!</h1>
+        <h3>Questions?</h3>
+        <p class="author">belen@mozilla.com <br>#devrel at irc.mozilla.org</p><img src="images/mozilla.png" width="200" class="logo">
+      </section>
+    </article>
+  </body>
+  <script src="build/build.js"></script>
+</html>
